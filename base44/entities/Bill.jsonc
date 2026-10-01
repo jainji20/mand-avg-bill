@@ -1,0 +1,134 @@
+{
+  "name": "Bill",
+  "type": "object",
+  "properties": {
+    "invoice_no": {
+      "type": "number",
+      "title": "Invoice Number"
+    },
+    "financial_year": {
+      "type": "string",
+      "title": "Financial Year"
+    },
+    "bill_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Bill Date"
+    },
+    "client_id": {
+      "type": "string",
+      "title": "Client Id"
+    },
+    "client_name": {
+      "type": "string",
+      "title": "Client Name"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "item_name": {
+      "type": "string",
+      "title": "Item Name"
+    },
+    "lines": {
+      "type": "array",
+      "title": "Item Lines",
+      "items": {
+        "type": "object",
+        "properties": {
+          "weight": {
+            "type": "number",
+            "title": "Weight (Qtl)"
+          },
+          "rate": {
+            "type": "number",
+            "title": "Rate (per Qtl)"
+          },
+          "amount": {
+            "type": "number",
+            "title": "Amount"
+          },
+          "marka": {
+            "type": "string",
+            "title": "Marka"
+          }
+        }
+      }
+    },
+    "mandi_tax_percent": {
+      "type": "number",
+      "title": "Mandi Tax %"
+    },
+    "commission_percent": {
+      "type": "number",
+      "title": "Commission %"
+    },
+    "bardana_bags": {
+      "type": "number",
+      "title": "Bardana Bags"
+    },
+    "bardana_rate": {
+      "type": "number",
+      "title": "Bardana Rate"
+    },
+    "sutali": {
+      "type": "number",
+      "title": "Sutali"
+    },
+    "labour": {
+      "type": "number",
+      "title": "Labour"
+    },
+    "hammali": {
+      "type": "number",
+      "title": "Hammali"
+    },
+    "total_weight": {
+      "type": "number",
+      "title": "Total Weight"
+    },
+    "total_amount": {
+      "type": "number",
+      "title": "Total Amount"
+    },
+    "total_bags": {
+      "type": "number",
+      "title": "Total Bags"
+    },
+    "mandi_tax_amount": {
+      "type": "number",
+      "title": "Mandi Tax Amount"
+    },
+    "bardana_amount": {
+      "type": "number",
+      "title": "Bardana Amount"
+    },
+    "commission_amount": {
+      "type": "number",
+      "title": "Commission Amount"
+    },
+    "total_expenses": {
+      "type": "number",
+      "title": "Total Expenses"
+    },
+    "grand_total": {
+      "type": "number",
+      "title": "Grand Total"
+    },
+    "parta_without_expenses": {
+      "type": "number",
+      "title": "Parta (without expenses)"
+    },
+    "parta_with_expenses": {
+      "type": "number",
+      "title": "Parta (with expenses)"
+    }
+  },
+  "required": [
+    "invoice_no",
+    "financial_year",
+    "bill_date",
+    "client_name"
+  ]
+}

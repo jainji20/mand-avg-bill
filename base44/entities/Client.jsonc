@@ -1,0 +1,26 @@
+{
+  "name": "Client",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "title": "Client Name"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location (City)"
+    },
+    "mandi_tax_percent": {
+      "type": "number",
+      "title": "Mandi Tax %"
+    },
+    "commission_percent": {
+      "type": "number",
+      "title": "Commission %"
+    }
+  },
+  "required": [
+    "client_name",
+    "location"
+  ]
+}
